@@ -119,14 +119,70 @@
     </nav>
   </div>
 
-  <div>
+  <!--   <div>
     <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
       <i class="icon-Play" aria-hidden="true"></i>
     </button>
     <button class="buttonIcon is-primary" aria-label="Reproducir" title="Reproducir">
       <i class="icon-Play" aria-hidden="true"></i>
     </button>
+  </div> -->
+
+  <div class="footer">
+    <div class="player-controls-song">
+      <div class="controls-song">
+        <img src="./images/MiniCover.png" width="56" height="56" alt="">
+        <div class="song">
+          <div class="song-items">
+            <a class="songItems-title">Grand Escape (feat. Tokio Miura)</a>
+            <a class="songItems-artist">RADWIMPS, Toko Miura</a>
+          </div>
+          <button class="player-control">
+            <i class="icon-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="player-controls">
+      <div class="controls">
+        <div class="control-items">
+          <button class="buttonIcon " aria-label="Anterior" title="Anterior">
+            <i class="icon-prev" aria-hidden="true"></i>
+          </button>
+          <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+            <i class="icon-Play" aria-hidden="true"></i>
+          </button>
+          <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+            <i class="icon-next" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="controls-progress">
+        <span class="progress-time">01:12</span>
+        <div class="control-range">
+          <input type="range" min="0" value="0" step="1">
+        </div>
+        <span class="progress-time">03:25</span>
+      </div>
+    </div>
+
+    <div class="player-controls-volumen">
+      <div class="controls-volumen">
+        <button class="player-control">
+          <i class="icon-volume-up"></i>
+        </button>
+        <div class="control-range">
+          <input type="range" min="0" value="0" step="1">
+        </div>
+      </div>
+    </div>
+
   </div>
+
+
+
 </body>
 
 </html>

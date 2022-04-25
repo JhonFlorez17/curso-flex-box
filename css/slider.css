@@ -1,0 +1,144 @@
+input[type="range"] {
+  border-radius: 5px;
+  block-size: 0.25rem;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  width: 100%;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: -2px;
+  box-shadow: -322px 0 0 320px rgba(0, 176, 80, 0.8);
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 0.25rem;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: -322px 0 0 320px rgba(255, 255, 255, 0.8);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.25rem;
+  border-radius: 5px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.control-items {
+  display: flex;
+  gap: 1rem;
+}
+
+.controls-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.control-range {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.controls-progress .progress-time {
+  line-height: 1;
+}
+
+.control-items {
+  display: flex;
+  gap: 1rem-;
+  justify-content: center;
+}
+
+.controls-volumen {
+  display: flex;
+  /* gap: 0.5rem; */
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.player-controls-song,
+.player-controls,
+.player-controls-volumen {
+  flex: 1;
+}
+
+.player-controls-volumen {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.controls-volumen input[type="range"] {
+  inline-size: 6rem;
+}
+
+.player-control {
+  border: none;
+  padding: 0;
+  background: none;
+  color: var(--gray10);
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.controls-song {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls-song img {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+}
+
+.song-items p {
+  padding: 0;
+  margin: 0;
+}
+.songItems-title {
+  font: var(--baseFontBold);
+  color: var(--white);
+  display: block;
+}
+
+.song-items-artist {
+  font: var(--small);
+  color: var(--gray10);
+}
+
+.song {
+  display: flex;
+  gap: 1.5rem;
+}
