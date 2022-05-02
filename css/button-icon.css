@@ -12,6 +12,12 @@
   background-color: var(--white);
   color: var(--gray50);
 }
+
+.buttonIcon.is-black {
+  background-color: var(--gray60);
+  color: var(--gray10);
+}
+
 .buttonIcon.is-primary {
   background-color: var(--primary);
   color: var(--white);

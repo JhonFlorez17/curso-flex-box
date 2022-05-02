@@ -1,0 +1,25 @@
+.page {
+  padding-inline-end: 2em;
+  padding-inline-start: 2em;
+  padding-block-end: 2em;
+}
+
+.page-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /*  border: 1px solid red; */
+}
+
+.page-block:nth-child(1) {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  margin-inline-start: -1.5rem;
+  margin-inline-end: -1.5rem;
+}
+
+.page .navigation {
+  margin-block-end: 1rem;
+}

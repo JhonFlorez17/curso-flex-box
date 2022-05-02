@@ -7,6 +7,6 @@
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-  padding-block: 1.5rem;
-  inline-size: 200px;
+  padding-block-end: 1.5rem;
+  padding-block-start: 1.5rem;
 }

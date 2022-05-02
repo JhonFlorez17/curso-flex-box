@@ -1,0 +1,65 @@
+.navigation {
+  /*   border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+}
+
+.input-search {
+  outline: none;
+  border: none;
+  border-radius: 1.25rem;
+  /* para el input responsive 
+  importante colocar el width 100% */
+  max-inline-size: 22rem;
+  width: 100%;
+  /*  */
+  padding-inline-start: 2rem;
+  padding-inline-end: 0.5rem;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  font: var(--baseFont);
+  color: var(--gray30);
+}
+
+.input-search::-webkit-input-placeholder {
+  color: var(--gray10);
+}
+
+.navigation-search {
+  position: relative;
+  flex: 1;
+}
+
+.navigation-search .icon-search {
+  position: absolute;
+  left: 0.5rem;
+  top: calc(50% - 0.5rem);
+  font-size: 1rem;
+  color: var(--gray30);
+  block-size: 1rem;
+}
+
+.playlist-controls {
+  flex-shrink: 0;
+}
+
+.playlist-controls button {
+  inline-size: 1.875rem;
+  block-size: 1.875rem;
+}
+
+.playlist-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@supports not (backdrop-filter: blur(5px)) {
+  .navigation {
+    background: var(--gray50);
+  }
+}
